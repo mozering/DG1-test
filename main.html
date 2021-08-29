@@ -12,6 +12,19 @@
 	<meta property="og:title" content="DG1 test">
 	<meta property="og:description" content="DG1 test">
 	<link rel="stylesheet" href="https://use.typekit.net/zqa7nib.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.slider').on('click', function () {
+        if ($('.active').next('.slide').length) {
+            $('.active').removeClass('active').next('.slide').addClass('active');
+        } else {
+            $('.active').removeClass('active');
+            $('.slide').first().addClass('active');
+        }
+    });
+});
+</script>
 </head>
 <body>
 <div id="main">
@@ -132,19 +145,6 @@ Feather dictionary</p>
 Hankyong National University Dept. of Design<br>
 Meeting ID: 662-904-7365</p></div>
 </body>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script>
-$(document).ready(function () {
-    $('.slider').on('click', function () {
-        if ($('.active').next('.slide').length) {
-            $('.active').removeClass('active').next('.slide').addClass('active');
-        } else {
-            $('.active').removeClass('active');
-            $('.slide').first().addClass('active');
-        }
-    });
-});
-</script>
 </html>
 
 </html>
