@@ -18,9 +18,17 @@ line-height: 270px; color: white; margin-top: 12%;}
 
 .introtext p {color: white;}
 
-.blinking:hover { -webkit-animation:blink 0.5s ease-in-out alternate; -moz-animation:blink 0.5s ease-in-out alternate; animation:blink 0.5s ease-in-out alternate; } 
-@-webkit-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} }
- @-moz-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} } 
- @keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} }
+.blinking:hover { -webkit-animation:blink .2s ease infinite; -moz-animation:blink .2s ease infinite; animation:blink.2s ease infinite; } 
+@-webkit-keyframes blink{ 0% {opacity:0;} 
+50% {opacity: 1;}
+ 100% {opacity:1;}}
+ @-moz-keyframes blink{ 0% {opacity:0;} 
+50% {opacity: 1;}
+ 100% {opacity:1;} } 
+ @keyframes blink{ 0% {opacity:0;} 
+50% {opacity: 1;}
+ 100% {opacity:1;} }
+}
+}
 
-출처: https://pikabu.tistory.com/77 [피카부]
+flashing .2s ease infinite
