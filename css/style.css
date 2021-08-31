@@ -12,13 +12,13 @@ a {text-decoration: none; color: black;}
 
 .intro {background-color: black;}
 
-.introtext {font-family: "Arial Narrow", Arial, sans-serif; font-size:225px; 
+.introtext {font-family: "Arial Narrow", Arial, sans-serif; font-size:208px; 
 text-align: center;
-line-height: 270px; color: white; margin-top: 12%;}
+line-height: 277px; color: white; margin-top: 12%;}
 
 .introtext p {color: white;}
 
-.blinking:hover { -webkit-animation:blink .2s ease infinite; -moz-animation:blink .2s ease infinite; animation:blink.2s ease infinite; } 
+.flashing-now, .blinking:hover { -webkit-animation:blink .2s ease infinite; -moz-animation:blink .2s ease infinite; animation:blink.2s ease infinite; } 
 @-webkit-keyframes blink{ 0% {opacity:0;} 
 50% {opacity: 1;}
  100% {opacity:1;}}
@@ -30,5 +30,37 @@ line-height: 270px; color: white; margin-top: 12%;}
  100% {opacity:1;} }
 }
 }
+
+.flashing-now {-webkit-animation: flashing .2s ease infinite;}
+
+@keyframes flashing{
+
+    0% {
+    opacity: 0;
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+@-webkit-keyframes flashing{
+
+    0% {
+    opacity: 0;
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+
+
+flashing .2s ease infinite
 
 flashing .2s ease infinite
