@@ -1,3 +1,5 @@
+
+
 .bigtext {font-family: "Arial Narrow", Arial, sans-serif; font-size: 140px; font-style: normal; 
 font-variant: normal; font-weight: 400; display: flex; justify-content: space-between;
 margin-bottom: 90px;}
@@ -27,3 +29,44 @@ font-style: normal; line-height: 168px;
 font-variant: normal; font-weight: 400; text-align: center; margin-top: 250px; margin-bottom: 85px;}
 
 .logo {margin-top: 250px;}
+
+.easein {transition: opacity 300ms ease-out;}
+
+#test {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
